@@ -1,8 +1,8 @@
 @extends('layouts.backoffice')
 
 @section('content')
-    <h1>Progetti</h1>
-    <a href="{{ route('projects.create') }}">Crea nuovo progetto</a>
+    <h1 class="m-4">Progetti</h1>
+    <a class="btn btn-primary m-4" href="{{ route('projects.create') }}">Crea nuovo progetto</a>
     <ul>
         @foreach ($projects as $project)
             <li>
