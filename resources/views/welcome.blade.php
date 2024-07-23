@@ -9,11 +9,18 @@
 </head>
 
 <body>
-    <div>
-        <h1>Benvenuto nel Back Office</h1>
-        <a href="{{ route('dashboard') }}">Dashboard</a>
-        <a href="{{ route('projects.index') }}">Gestione Progetti</a>
+    <div class="d-flex justify-content-center mt-4">
+        <h1>Benvenuto nel Back Office!</h1>
     </div>
+    <div class="p-3">
+        <a class="btn btn-primary" href="{{ route('dashboard') }}">Dashboard</a>
+
+        <hr>
+
+        <a class="btn btn-primary" href="{{ route('projects.index') }}">Gestione Progetti</a>
+    </div>
+
+
 </body>
 
 </html>

@@ -1,7 +1,11 @@
-@extends('layouts.backoffice')
+@extends('layouts.app')
 
 @section('content')
-    <h1>{{ $project->title }}</h1>
-    <p>{{ $project->description }}</p>
-    <a href="{{ route('projects.index') }}">Torna alla lista dei progetti</a>
+    <div class="container">
+        <h1>{{ $project->name }}</h1>
+        <p>{{ $project->description }}</p>
+        @if ($project->type)
+            <p>Tipo: {{ $project->type->name }}</p>
+        @endif
+    </div>
 @endsection
